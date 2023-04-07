@@ -1,0 +1,106 @@
+/* Intro */
+.intro-container {
+    display: flex;
+    align-items: center;
+}
+
+#intro h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+#intro p {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#intro .intro-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+.linkedin-pic {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-right: 5%;
+    -webkit-box-shadow: 5px 5px 30px black;
+    box-shadow: 5px 5px 30px black;
+}
+
+
+@media screen and (max-width: 840px){
+    .intro-container {
+        display: block;
+    }
+
+    .linkedin-pic {
+        width: 200px;
+        float: none;
+        margin-right: 0;
+        margin-top: 15px;
+    }
+
+    #intro .intro-info {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    div.inner {
+        text-align: center;
+    }
+}
+
+/* About Me */
+
+
+/* Projects */
+
+/* Skills */
+.education-logo{
+    height: 60px;
+    width: 60px;
+}
+
+ul {
+    list-style: none;
+}
+
+.technology-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.features section .technology-logo {
+    top: 25%;
+  }
+
+@media screen and (max-width: 980px) and (min-width: 500px) {
+    .features section .technology-logo {
+      left: 20%;
+      top: 25%;
+    }
+
+    .features {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .features + ul.actions {
+      margin-left: 12.5%;
+    }
+}
+
+/* Contact */
+input#name, input#email, textarea#message {
+    -webkit-box-shadow: 0 0 10px #7e3171;
+    box-shadow: 0 0 10px #7e3171;
+}
